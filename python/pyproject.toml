@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verity-gate"
+version = "0.2.2"
+description = "Client and integration helpers for the Verity Gate API — put the gate in your agent's path with one decorator."
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [{ name = "Verity" }]
+keywords = ["ai-agents", "verification", "gate", "audit-chain"]
+# No third-party dependencies: the client runs on the standard library alone.
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.2"]
+
+[project.scripts]
+verity-gate-mcp = "verity_gate.mcp_server:main"
+verity-gate = "verity_gate.cli:main"
+
+[project.urls]
+Homepage = "https://verityverdict.com"
+Documentation = "https://verityverdict.com/api/"
+
+[tool.setuptools.packages.find]
+include = ["verity_gate*"]
