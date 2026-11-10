@@ -1,5 +1,7 @@
 # Verity — integration packages
 
+[![PyPI](https://img.shields.io/pypi/v/verity-gate)](https://pypi.org/project/verity-gate/) [![npm](https://img.shields.io/npm/v/verity-gate)](https://www.npmjs.com/package/verity-gate) [![Live demo](https://img.shields.io/badge/demo-live%20on%20verityverdict.com-teal)](https://verityverdict.com/start/#demo)
+
 Put the Verity gate in your agent's path with one decorator.
 
 The gate sits at the seam between an agent and the world: your runtime
